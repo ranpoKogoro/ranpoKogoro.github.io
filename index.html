@@ -5,21 +5,64 @@
     <meta charset="utf-8">
     <!-- IEでも表示可能にする呪文。 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- IEでも表示可能にする呪文。 -->
+    <!-- サイト製作者の名前 -->
     <meta name="author" content="IshiOka">
+    <!-- タブに表示されるページ名 -->
     <title>E-EMAGE|個人開発ゲームサイト</title>
+    <!-- 検索結果に表示される。サイト説明 -->
     <meta name="description" content="個人開発のノベルゲームの閲覧サイトです。
     完全無料で利用できます。ティラノスクリプトで作成しています。">
+    <!-- タブに表示されるファビコン(画像) -->
     <link rel="icon" href="favicon.ico">
+    <!-- スタイルシート読み込み -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <img src="img/Eemage_logo.png" alt="logo">
-      <img src="img/sitetitile.png" alt="title">
-      <img src="img/siteInfo.png" alt="siteInfo">
-      <img src="img/loginkazari.png" alt="login">
+      <div class="headrLeft">
+        <img src="img/Eemage_logo.png" alt="logo">
+        <img src="img/sitetitile.png" alt="title">
+      </div>
+      <div class="headrRight">
+        <img class="button" src="img/siteInfo.png" alt="siteInfo">
+        <img class="button" src="img/loginkazari.png" alt="login">
+      </div>
     </header>
+    <!-- PG密室ゲームの括り -->
+    <div id="frame1">
+      <div class="pgRoom">
+        <div class="container">
+          <img id="subheading" src="img/PG_title.png" alt="見習いPG密室">
+          <!-- 下記gameP、ゲーム画面Pが出来次第書き換え予定。 -->
+          <div class="gameP">
+            <img id="deving1" src="img/deveropping.png" alt="開発中1">
+            <img id="deving2" src="img/Eemage_logo_L.png" alt="ロゴ">
+            <img id="deving3" src="img/deveropping.png" alt="開発中2">
+          </div>
+          </div>
+          <div class="instructions">
+            <div class="Sentence">
+              <h1>ジャンル</h1>
+              <p>脱出ゲーム風プログラミングクイズゲームです。</p>
+              <h1>クイズ内容</h1>
+              <p>javascriptの基礎的なクイズになります。<br>
+              あまり本格的ではないため、息抜き程度にどうぞ。</p>
+              <h1>あらすじ</h1>
+              <p>町外れにひっそりとたたずむ慶尚（けいしょう）パソコン教室。<br>
+              その受講生、定数(さだかず)くんは悩みを抱えておりました。<br>
+              プログラミング歴早数年になるというものの、ちっとも上達しないのです。<br>
+              見かねた慶尚室長は定数くんに地獄のプログラミング夏合宿を提案したのでした...<br>
+              はたして定数くんは夏合宿を無事に乗り越えることができるのか!?</p>
+            </div>
+            <div class="instructionsRight">
+                <img id="instlogo" src="img/Eemage_logo_M.png" alt="説明横ロゴ">
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- 推理ゲームの括り -->
+    <div class="detective"></div>
 
+    <footer></footer>
   </body>
 </html>
