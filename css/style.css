@@ -13,9 +13,14 @@ body {
 .button {
   height: 70px;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 .button:hover {
+  /* transition: 対象 時間;でアニメーション */
+  transition: all 1.5s;
   opacity: 0.6;
+  background-color: rgba(0, 255, 255, 0.5);
 }
 header {
   background-image: url(../img/backcolor.png);
@@ -31,7 +36,7 @@ header {
 /* ここからPG密室の括り */
 #frameA1{
   background-color: rgb(255, 255, 255, 0.4);
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   flex-basis: 50%;
 }
@@ -45,7 +50,7 @@ header {
   text-align: center;
   background-image: url(../img/backcolor.png);
   padding: 30px 30px;
-  margin: 30px;
+  margin: 20px;
 }
 #subheading {
   /* positon: relativeで実際に表示される位置より相対的な指定距離だけ移動した位置に表示出来る。 */
