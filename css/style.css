@@ -1,8 +1,13 @@
 body {
   font-family: "Hiragino Kaku Gothic ProN";
-  background-image: url(../img/sitebody_code_wide.png);
   background-repeat: round;
   background-color: #67A2B7;
+  background-image: url(../img/light_S.png);
+  margin: 0px;
+}
+.body2 {
+  background-image: url(../img/sitebody_code_wide.png);
+  background-repeat: round;
   margin: 0px;
 }
 .button {
