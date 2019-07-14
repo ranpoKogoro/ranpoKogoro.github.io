@@ -41,7 +41,7 @@ It is a static game site created.
 
 ## Future [future introduction plan]
 ・ Enchant.js
-・ Tirano script
+・ Tyrano script
 
 ## Usage [confirmation method]
 The latest confirmation is
@@ -52,4 +52,4 @@ such as googleChrome
 Please open it in your browser.
 
 ## Author [Author]
-ranpoKogoro
+©︎Ishioka
