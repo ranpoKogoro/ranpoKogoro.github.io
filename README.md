@@ -24,7 +24,7 @@ googleChromeなどの
 ブラウザで開いてください。
 
 ## Author[製作者]
-ranpoKogoro
+©︎Ishioka
 
 ## lang='en'
 
