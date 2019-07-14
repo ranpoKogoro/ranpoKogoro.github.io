@@ -11,7 +11,7 @@
 html,css,javascript,jQueryで
 作成した静的なゲームサイトです。
 
-## future[今後導入予定]
+## Future[今後導入予定]
 ・enchant.js
 ・ティラノスクリプト
 
@@ -38,9 +38,10 @@ The game is currently under development.
 ## Description [detailed description]
 html, css, javascript, jQuery
 It is a static game site created.
-What you are going to introduce in the future is as follows.
+
+## Future [future introduction plan]
 ・ Enchant.js
-・ Tyrano script
+・ Tirano script
 
 ## Usage [confirmation method]
 The latest confirmation is
