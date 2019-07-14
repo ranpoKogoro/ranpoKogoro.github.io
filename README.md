@@ -10,7 +10,8 @@
 ## Description[詳細説明]
 html,css,javascript,jQueryで
 作成した静的なゲームサイトです。
-今後導入しようとしているものは、下記となります。
+
+## future[今後導入予定]
 ・enchant.js
 ・ティラノスクリプト
 
