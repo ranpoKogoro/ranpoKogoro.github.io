@@ -1,6 +1,6 @@
 enchant();
 
-window.onload = function () { 
+window.onload = function () {
 	//window.onloadとはenchant.min.jsで定義されているのか？下記全てがコールバック関数として呼び出されるのは認識している。これはloadする関数。
 	var game = new Game(400, 500);  				//画面サイズを400*500にする。（このサイズだとスマホでも快適なのでおススメ）
 
@@ -28,8 +28,8 @@ window.onload = function () {
 	game.preload([B_Retry]);					//データを読み込んでおく
 
 	//ツイートボタン読み込み
-	var B_Tweet = "Tweet.png";						//game.htmlからの相対パス
-	game.preload([B_Tweet]);					//データを読み込んでおく		
+	// var B_Tweet = "Tweet.png";						//game.htmlからの相対パス
+	// game.preload([B_Tweet]);					//データを読み込んでおく
 
 	//読み込み終わり
 	/////////////////////////////////////////////////
@@ -38,7 +38,7 @@ window.onload = function () {
 	game.onload = function () {					//ロードが終わった後にこの関数が呼び出されるので、この関数内にゲームのプログラムを書こう
 
 		/////////////////////////////////////////////////
-		//グローバル変数 
+		//グローバル変数
 
 		var Point = 0;									//ポイント
 		var State = 0;								//現在のゲーム状態
@@ -52,7 +52,7 @@ window.onload = function () {
 		game.pushScene(S_MAIN);  					//S_MAINシーンオブジェクトを画面に設置
 		S_MAIN.backgroundColor = "rgba(0,150,200,1)"; 			//S_MAINシーンの背景は黒くした_色彩を変更_backgroundimageは設定できるのか
 		//ポイント表示テキスト
-		// S_MAIN.backgroundColor = "rgba(0,150,200,1)"; 	
+		// S_MAIN.backgroundColor = "rgba(0,150,200,1)";
 		var S_Text = new Label(); 					//テキストのインスタンス生成Labelクラス
 		S_Text.font = "20px Meiryo";				//フォントはメイリオ 20px 変えたかったらググってくれ
 		S_Text.color = 'rgba(255,255,255,1)';		//色　RGB+透明度　今回は白
@@ -64,16 +64,16 @@ window.onload = function () {
 
 		var bg = function( scene ) {
 			var town = new Sprite(400, 500);
-			town.image = game.assets[ 'yakei.png' ];		
+			town.image = game.assets[ 'yakei.png' ];
 		}
-				
+
 
 		//係長ボタン
 		var Kajika = new Sprite(166, 168);				//画像サイズをここに書く。使う予定の画像サイズはプロパティで見ておくこと
 		//逆に画像を変えたければ上記を変更すればOK
 		Kajika.moveTo(118, 100);						//係長ボタンの位置
 		Kajika.image = game.assets[KajikaImg];			//読み込む画像の相対パスを指定。　事前にgame.preloadしてないと呼び出せない
-		S_MAIN.addChild(Kajika);					//S_MAINにこの係長画像を貼り付ける  
+		S_MAIN.addChild(Kajika);					//S_MAINにこの係長画像を貼り付ける
 
 		Kajika.ontouchend = function () {				//係長ボタンをタッチした（タッチして離した）時にこの中の内容を実行する
 			Point++;									//Pointを1増やす
@@ -94,8 +94,10 @@ window.onload = function () {
 				State = 4;
 			} else if (Point < 15){
 				State = 5;
-			} else {
+			} else if (Point < 21){
 				State = 6;
+			} else {
+				State = 7;
 			}
 
 		};
@@ -124,7 +126,7 @@ window.onload = function () {
 				Kajika.x = 100 + Math.sin(Kajika.y / 100) * 200; // ｙ座標を振幅100pxのサイン波で移動(Sinは便利なので慣れとくといいよ！)
 				//sin波は上下に売れ動きながら移動する設定だと思われる
 			}
-			if (State == 4) {							//状態４（Point９以上から）　4は初期セット状態（State=4）と移動状態（State=4.1)の2つに状態をわける		
+			if (State == 4) {							//状態４（Point９以上から）　4は初期セット状態（State=4）と移動状態（State=4.1)の2つに状態をわける
 				Kajika.x = Math.random() * 100;			//ｙ座標の位置をランダムに決定
 				State = 4.1;
 			}
@@ -133,12 +135,17 @@ window.onload = function () {
 			}
 			if (State == 5) {							//状態５（Point１２以上から）　 ｙ軸が毎フレーム毎に変化する
 				Kajika.y += 5;						//移動します。
-				Kajika.x = Math.random() * 300;	
+				Kajika.x = Math.random() * 300;
 						//ｙ座標の位置を枚フレーム毎にランダム決定
 			}
 			if (State == 6) {							//状態５（Point１２以上から）　 ｙ軸が毎フレーム毎に変化する
 				Kajika.y += 10;						//移動します。
-				Kajika.x = Math.random() * 300;	
+				Kajika.x = Math.random() * 300;
+						//ｙ座標の位置を枚フレーム毎にランダム決定
+			}
+			if (State == 7) {							//状態５（Point１２以上から）　 ｙ軸が毎フレーム毎に変化する
+				Kajika.y += 20;						//移動します。
+				Kajika.x = Math.random() * 300;
 						//ｙ座標の位置を枚フレーム毎にランダム決定
 			}
 			//現在のテキスト表示
@@ -150,7 +157,7 @@ window.onload = function () {
 				game.pushScene(S_END);				//S_ENDシーンを読み込ませる
 
 				//ゲームオーバー後のテキスト表示
-				S_GameOverText.text = "GAMEOVER 記録：" + Point + "枚だよ!!";				//テキストに文字表示 
+				S_GameOverText.text = "GAMEOVER 記録：" + Point + "mはばたかせたよ!!";				//テキストに文字表示
 			}
 
 		};
@@ -174,9 +181,9 @@ window.onload = function () {
 
 		//リトライボタン
 		var S_Retry = new Sprite(120, 60);				//画像サイズをここに書く。使う予定の画像サイズはプロパティで見ておくこと
-		S_Retry.moveTo(50, 300);						//リトライボタンの位置
+		S_Retry.moveTo(150, 300);						//リトライボタンの位置
 		S_Retry.image = game.assets[B_Retry];			//読み込む画像の相対パスを指定。　事前にgame.preloadしてないと呼び出せない
-		S_END.addChild(S_Retry);					//S_ENDにこのリトライボタン画像を貼り付ける  
+		S_END.addChild(S_Retry);					//S_ENDにこのリトライボタン画像を貼り付ける
 
 		S_Retry.ontouchend = function () {				//S_Retryボタンをタッチした（タッチして離した）時にこの中の内容を実行する
 			State = 0;
@@ -188,12 +195,12 @@ window.onload = function () {
 		var S_Tweet = new Sprite(120, 60);				//画像サイズをここに書く。使う予定の画像サイズはプロパティで見ておくこと
 		S_Tweet.moveTo(230, 300);						//リトライボタンの位置
 		S_Tweet.image = game.assets[B_Tweet];			//読み込む画像の相対パスを指定。　事前にgame.preloadしてないと呼び出せない
-		S_END.addChild(S_Tweet);					//S_ENDにこのリトライボタン画像を貼り付ける  
+		S_END.addChild(S_Tweet);					//S_ENDにこのリトライボタン画像を貼り付ける
 
 		S_Tweet.ontouchend = function () {				//S_Tweetボタンをタッチした（タッチして離した）時にこの中の内容を実行する
 			//ツイートＡＰＩに送信
 
-			window.open("http://twitter.com/intent/tweet?text=頑張って" + Point + "枚入手した&hashtags=ahoge&url=" + url); //ハッシュタグにahogeタグ付くようにした。
+			window.open("http://twitter.com/intent/tweet?text=頑張って" + Point + "mはばたかせたよ!!&hashtags=ahoge&url=" + url); //ハッシュタグにahogeタグ付くようにした。
 		};
 
 	};
