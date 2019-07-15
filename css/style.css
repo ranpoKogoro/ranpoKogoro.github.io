@@ -32,7 +32,7 @@ header {
   /* box-shadow: 3px 3px 6px -2px #555,
   3px 3px 8px rgba(255,255,255,0.8) inset; */
   /* box-shadow: 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 内側指定; */
-  box-shadow: 3px 3px 6px 2px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 6px 2px rgba(64,101,115,0.5);
 }
 .headrLeft {
   height: 50px
@@ -46,17 +46,12 @@ header {
   padding: 5px;
   margin: 60px 100px;
 }
-.frameB1{
-  background-color: rgb(255, 255, 255, 0.4);
-  padding: 10px;
-  margin: 10px;
-  flex-basis: 50%;
-}
 .frame2 {
   text-align: center;
   background-image: url(../img/backcolor.png);
   padding: 30px 30px;
   margin: 20px;
+  box-shadow: 3px 3px 6px 2px rgba(64,101,115,0.5);
 }
 .subheading {
   /* positon: relativeで実際に表示される位置より相対的な指定距離だけ移動した位置に表示出来る。 */
@@ -160,7 +155,7 @@ p {
 footer {
   height:50px;
   background-image: url(../img/backcolor.png);
-  box-shadow: 0px -3px 6px 2px rgba(0,0,0,0.5);
+  box-shadow: 0px -3px 6px 2px rgba(64,101,115,0.5);
   color: white;
   text-align: center;
 }
