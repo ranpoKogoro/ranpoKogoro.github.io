@@ -40,17 +40,13 @@ header {
 .headrRight {
   height: 50px
 }
-.wrapper{
-  display: flex;
-}
 /* ここからPG密室の括り */
-#frameA1{
+.frameA1{
   background-color: rgb(255, 255, 255, 0.4);
   padding: 5px;
-  margin: 10px;
-  flex-basis: 50%;
+  margin: 60px 200px;
 }
-#frameB1{
+.frameB1{
   background-color: rgb(255, 255, 255, 0.4);
   padding: 10px;
   margin: 10px;
@@ -62,7 +58,7 @@ header {
   padding: 30px 30px;
   margin: 20px;
 }
-#subheading {
+.subheading {
   /* positon: relativeで実際に表示される位置より相対的な指定距離だけ移動した位置に表示出来る。 */
   position: relative;
   bottom: 40px;
@@ -144,9 +140,6 @@ header {
 .instructions {
   background-image: url(../img/Eemage_logo_back.png);
   background-repeat: round;
-}
-.mask1 {
-
 }
 .Sentence {
   color: white;
