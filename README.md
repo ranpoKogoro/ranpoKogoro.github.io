@@ -53,3 +53,11 @@ Please open it in your browser.
 
 ## Author [Author]
 ©︎Ishioka
+
+```mermaid
+graph TD
+      ST[Start] --> IF1{cssにメディアクエリを採用}
+      IF1 -->|jQuery| PC1[モーダルウィンドウ作成]
+      IF1 -->|ゲーム作成中| ED[終]
+      PC1 --> ED
+\```
