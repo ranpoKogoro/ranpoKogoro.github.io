@@ -5,182 +5,211 @@ body {
   background-image: url(../img/light_S.png);
   margin: 0px;
 }
-.body2 {
-  background-image: url(../img/sitebody_code_wide.png);
-  background-repeat: repeat;
-  margin: 0px;
-}
-.button {
-  height: 70px;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-}
-.button:hover {
-  /* transition: 対象 時間;でアニメーション */
-  transition: all 1.5s;
-  opacity: 0.6;
-  background-color: rgba(0, 255, 255, 0.5);
-}
-header {
-  background-image: url(../img/backcolor.png);
-  height: 70px;
-  padding: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  /* box-shadow: 3px 3px 6px -2px #555,
-  3px 3px 8px rgba(255,255,255,0.8) inset; */
-  /* box-shadow: 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 内側指定; */
-  box-shadow: 3px 3px 6px 2px rgba(64,101,115,0.5);
-}
-.headrLeft {
-  height: 60px;
-  margin-left: 20px;
-}
-.headrRight {
-  height: 50px;
-  margin-right:30px;
-}
-.headerUnderspace {
-  height: 50px;
-}
-.frame1{
-  background-color: rgb(255, 255, 255, 0.4);
-  padding: 5px;
-  margin: 60px 100px;
-}
-.frame2 {
-  text-align: center;
-  background-image: url(../img/backcolor.png);
-  /* background-image: url(../img/Eemage_logo_back.png); */
-  padding: 20px 20px;
-  margin: 20px;
-  box-shadow: 3px 3px 6px 2px rgba(64,101,115,0.5);
-}
-.subheading {
-  /* positon: relativeで実際に表示される位置より相対的な
-  指定距離だけ移動した位置に表示出来る。 */
-  position: relative;
-  bottom: 40px;
-}
-.container {
-  background-color: rgb(198, 156, 109, 0.7);
-  opacity: 80%;
-  text-align: center;
-}
-.gameP {
-  text-align: center;
-  height: 400px;
-  background-image: url(../img/dasyutu.png);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  bottom: 40px;
-  padding: 20px;
-  margin: 20px;
-  flex-basis: 100%;
-}
-.gameP2 {
-  text-align: center;
-  height: 400px;
-  background-image: url(../img/suirigameKari.png);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  bottom: 40px;
-  padding: 20px;
-  margin: 20px;
-  flex-basis: 100%;
-}
-.gameP3 {
-  text-align: center;
-  height: 400px;
-  background-image: url(../img/gemeframe_kakarityo.png);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  bottom: 40px;
-  padding: 20px;
-  margin: 20px;
-  flex-basis: 100%;
-}
-.gameP4 {
-  text-align: center;
-  height: 400px;
-  background-image: url(../img/gemeframe_dami.png);
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  bottom: 40px;
-  padding: 20px;
-  margin: 20px;
-  flex-basis: 100%;
-}
-.startBtn {
-  width: 200px;
-  font-size: 20px;
-  background-color: rgba(28, 132, 184, 1);
-  position: relative;
-  bottom: 30px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 40px;
-  display: inline-block;
-  cursor: pointer;
-  box-shadow: 0px 5px rgba(15, 69, 97, 1);
-}
-.startBtn:hover {
-  transition: all 0.5s;
-  background-color: rgba(247, 161, 62, 1);
-  box-shadow: 0px 5px rgba(156, 102, 40, 1);
-}
-.startBtn:active{
-  box-shadow: none;
-  position: relative;
-  bottom: 20px;
-}
-.btnMessage {
-  color: white;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-.instructions {
-  background-image: url(../img/Eemage_logo_back.png);
-  background-repeat: repeat;
-}
-.Sentence {
-  color: white;
-  text-align: left;
-  margin-top: 10px;
-}
-h1 {
-  font-size: 22px;
-  margin: 5px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-}
-p {
-  font-size: 18px;
-  margin: 0px;
-}
-footer {
-  height:50px;
-  background-image: url(../img/backcolor.png);
-  box-shadow: 0px -3px 6px 2px rgba(64,101,115,0.5);
-  color: white;
-  text-align: center;
-}
-footer p {
-  position: relative;
-  top: 10px;
-}
+  .body2 {
+    background-image: url(../img/sitebody_code_wide.png);
+    background-repeat: repeat;
+    margin: 0px;
+  }
+  .button {
+    height: 70px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  .button:hover {
+    /* transition: 対象 時間;でアニメーション */
+    transition: all 1.5s;
+    opacity: 0.6;
+    background-color: rgba(0, 255, 255, 0.5);
+  }
+  header {
+    background-image: url(../img/backcolor.png);
+    height: 70px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    /* box-shadow: 3px 3px 6px -2px #555,
+    3px 3px 8px rgba(255,255,255,0.8) inset; */
+    /* box-shadow: 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 内側指定; */
+    box-shadow: 3px 3px 6px 2px rgba(64,101,115,0.5);
+  }
+  #eemageT_logo {
+    height: 70px;
+  }
+  #eemageT_logo:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+  }
+  .headrLeft {
+    height: 60px;
+    margin-left: 20px;
+    float: left;
+  }
+  .headrRight {
+    height: 50px;
+    margin-right:30px;
+  }
+  .headerUnderspace {
+    height: 50px;
+  }
+  .frame1{
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 5px;
+    margin: 60px 100px;
+  }
+  .frame2 {
+    text-align: center;
+    background-image: url(../img/backcolor.png);
+    /* background-image: url(../img/Eemage_logo_back.png); */
+    padding: 20px 20px;
+    margin: 20px;
+    box-shadow: 3px 3px 6px 2px rgba(64,101,115,0.5);
+  }
+  .subheading {
+    /* positon: relativeで実際に表示される位置より相対的な
+    指定距離だけ移動した位置に表示出来る。 */
+    position: relative;
+    bottom: 40px;
+  }
+  .container {
+    background-color: rgb(198, 156, 109, 0.7);
+    opacity: 80%;
+    text-align: center;
+  }
+  .gameP {
+    text-align: center;
+    height: 400px;
+    background-image: url(../img/dasyutu.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    padding: 20px;
+    margin: 20px;
+    flex-basis: 100%;
+  }
+  .gameP2 {
+    text-align: center;
+    height: 400px;
+    background-image: url(../img/suirigameKari.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    padding: 20px;
+    margin: 20px;
+    flex-basis: 100%;
+  }
+  .gameP3 {
+    text-align: center;
+    height: 400px;
+    background-image: url(../img/gemeframe_kakarityo.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    padding: 20px;
+    margin: 20px;
+    flex-basis: 100%;
+  }
+  .gameP4 {
+    text-align: center;
+    height: 400px;
+    background-image: url(../img/gemeframe_dami.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 40px;
+    padding: 20px;
+    margin: 20px;
+    flex-basis: 100%;
+  }
+  .startBtn {
+    width: 200px;
+    font-size: 20px;
+    background-color: rgba(28, 132, 184, 1);
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0px 5px rgba(15, 69, 97, 1);
+  }
+  .startBtn:hover {
+    transition: all 0.5s;
+    background-color: rgba(247, 161, 62, 1);
+    box-shadow: 0px 5px rgba(156, 102, 40, 1);
+  }
+  .startBtn:active{
+    box-shadow: none;
+    position: relative;
+    bottom: 20px;
+  }
+  .btnMessage {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .instructions {
+    background-image: url(../img/Eemage_logo_back.png);
+    background-repeat: repeat;
+  }
+  .Sentence {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  #eemageT {
+    height: 65px;
+    display: inline;
+  }
+  p {
+    font-size: 18px;
+    margin: 0px;
+  }
+  footer {
+    height:50px;
+    background-image: url(../img/backcolor.png);
+    box-shadow: 0px -3px 6px 2px rgba(64,101,115,0.5);
+    color: white;
+    text-align: center;
+  }
+  footer p {
+    position: relative;
+    top: 10px;
+  }
+  /* 下記は、メディアクエリという画面サイズによってcssを変更する表記。
+  メディアクエリは、@media() {}と表記。@media()の()内の;は入れない。
+  既存のcssの下に表記しないと反応しない認識。 */
+  @media (max-width: 850px) {
+    body{
+      background-color: white;
+    }
+    h1{
+      font-size: 15px;
+      margin: 5px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+    }
+    #eemageT {
+      display: none;
+    }
+  }
