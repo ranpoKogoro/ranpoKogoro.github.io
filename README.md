@@ -55,10 +55,6 @@ Please open it in your browser.
 ©︎Ishioka
 
 ```mermaid
-sequenceDiagram
-  A->> B: Query
-  B->> C: Forward query
-  Note right of C: Thinking...
-  C->> B: Response
-  B->> A: Forward response
+graph TD;
+  A-->B
 ```
