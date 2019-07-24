@@ -53,8 +53,3 @@ Please open it in your browser.
 
 ## Author [Author]
 ©︎Ishioka
-
-```mermaid
-graph TD;
-  A-->B
-```
