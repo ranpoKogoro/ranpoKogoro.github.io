@@ -1,9 +1,16 @@
 body {
   font-family: "Hiragino Kaku Gothic ProN";
-  background-repeat: round;
+  background-repeat: repeat;
   background-color: #67A2B7;
-  background-image: url(../img/light_S.png);
+  background-image: url(../img/light.png);
+  animation: bg-slider 50s linear infinite;
   margin: 0px;
+}
+/* @keyframes で上記のアニメーションに設定した */
+
+@keyframes bg-slider {
+	from { background-position: 0 0; }
+    to { background-position: -3000px 1000px; }
 }
   .body2 {
     background-image: url(../img/sitebody_code_wide.png);
@@ -57,7 +64,6 @@ body {
     height: 50px;
   }
   .frame1{
-    background-color: rgb(255, 255, 255, 0.4);
     padding: 5px;
     margin: 60px 100px;
   }
@@ -226,13 +232,14 @@ body {
       height: 55px;
     }
     .button {
-      height: 50px;
+      position: relative;
+      top: 5px;
+      height: 40px;
       cursor: pointer;
       padding: 0;
       margin: 0;
     }
     .frame1{
-      background-color: rgb(255, 255, 255, 0.4);
       padding: 5px;
       margin: 60px 20px;
     }
@@ -249,10 +256,17 @@ body {
     .subheading {
       /* positon: relativeで実際に表示される位置より相対的な
       指定距離だけ移動した位置に表示出来る。 */
+      position: relative;
+      bottom: 40px;
       width: 200px;
     }
     #eemageT {
       display: none;
+    }
+    .container {
+      background-color: rgb(198, 156, 109, 0.7);
+      opacity: 80%;
+      text-align: center;
     }
     .gameP {
       text-align: center;
@@ -263,8 +277,10 @@ body {
       background-repeat: no-repeat;
       position: relative;
       bottom: 40px;
-      padding: 20px;
-      margin: 20px;
+      padding: 10px;
+      padding-bottom: 0px;
+      margin: 10px;
+      margin-bottom: 0px;
       flex-basis: 100%;
     }
     .gameP2 {
@@ -276,8 +292,10 @@ body {
       background-repeat: no-repeat;
       position: relative;
       bottom: 40px;
-      padding: 20px;
-      margin: 20px;
+      padding: 10px;
+      padding-bottom: 0px;
+      margin: 10px;
+      margin-bottom: 0px;
       flex-basis: 100%;
     }
     .gameP3 {
@@ -289,8 +307,10 @@ body {
       background-repeat: no-repeat;
       position: relative;
       bottom: 40px;
-      padding: 20px;
-      margin: 20px;
+      padding: 10px;
+      padding-bottom: 0px;
+      margin: 10px;
+      margin-bottom: 0px;
       flex-basis: 100%;
     }
     .gameP4 {
@@ -302,8 +322,10 @@ body {
       background-repeat: no-repeat;
       position: relative;
       bottom: 40px;
-      padding: 20px;
-      margin: 20px;
+      padding: 10px;
+      padding-bottom: 0px;
+      margin: 10px;
+      margin-bottom: 0px;
       flex-basis: 100%;
     }
     .startBtn {
@@ -314,6 +336,7 @@ body {
       bottom: 30px;
       text-align: center;
       margin: 10px;
+      margin-bottom: 0px;
       padding: 10px;
       border-radius: 40px;
       display: inline-block;
