@@ -199,17 +199,129 @@ body {
   /* 下記は、メディアクエリという画面サイズによってcssを変更する表記。
   メディアクエリは、@media() {}と表記。@media()の()内の;は入れない。
   既存のcssの下に表記しないと反応しない認識。 */
-  @media (max-width: 850px) {
+  @media (max-width: 880px) {
     body{
-      background-color: white;
+      font-family: "Hiragino Kaku Gothic ProN";
+      background-repeat: round;
+      background-color: #67A2B7;
+      background-image: url(../img/light_S.png);
+      margin: 0px;
+    }
+    header {
+      background-image: url(../img/backcolor.png);
+      height: 50px;
+      padding: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+      /* box-shadow: 3px 3px 6px -2px #555,
+      3px 3px 8px rgba(255,255,255,0.8) inset; */
+      /* box-shadow: 左右の向きpx  上下の向きpx ぼかしpx 広がりpx 色 内側指定; */
+      box-shadow: 3px 3px 6px 2px rgba(64,101,115,0.5);
+    }
+    #eemageT_logo {
+      height: 55px;
+    }
+    .button {
+      height: 50px;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+    }
+    .frame1{
+      background-color: rgb(255, 255, 255, 0.4);
+      padding: 5px;
+      margin: 60px 20px;
     }
     h1{
-      font-size: 15px;
+      font-size: 17px;
       margin: 5px;
       margin-bottom: 0px;
       margin-left: 0px;
     }
+    p {
+      font-size: 12px;
+      margin: 0px;
+    }
+    .subheading {
+      /* positon: relativeで実際に表示される位置より相対的な
+      指定距離だけ移動した位置に表示出来る。 */
+      width: 200px;
+    }
     #eemageT {
       display: none;
     }
+    .gameP {
+      text-align: center;
+      height: 200px;
+      background-image: url(../img/dasyutu.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      bottom: 40px;
+      padding: 20px;
+      margin: 20px;
+      flex-basis: 100%;
+    }
+    .gameP2 {
+      text-align: center;
+      height: 200px;
+      background-image: url(../img/suirigameKari.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      bottom: 40px;
+      padding: 20px;
+      margin: 20px;
+      flex-basis: 100%;
+    }
+    .gameP3 {
+      text-align: center;
+      height: 200px;
+      background-image: url(../img/gemeframe_kakarityo.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      bottom: 40px;
+      padding: 20px;
+      margin: 20px;
+      flex-basis: 100%;
+    }
+    .gameP4 {
+      text-align: center;
+      height: 200px;
+      background-image: url(../img/gemeframe_dami.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative;
+      bottom: 40px;
+      padding: 20px;
+      margin: 20px;
+      flex-basis: 100%;
+    }
+    .startBtn {
+      height: 20px;
+      font-size: 15px;
+      background-color: rgba(28, 132, 184, 1);
+      position: relative;
+      bottom: 30px;
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 40px;
+      display: inline-block;
+      cursor: pointer;
+      box-shadow: 0px 5px rgba(15, 69, 97, 1);
+    }
+
   }
+  /* * {
+    box-sizing: border-box;
+  } */
