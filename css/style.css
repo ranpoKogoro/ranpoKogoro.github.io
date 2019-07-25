@@ -206,13 +206,6 @@ body {
   メディアクエリは、@media() {}と表記。@media()の()内の;は入れない。
   既存のcssの下に表記しないと反応しない認識。 */
   @media (max-width: 880px) {
-    body{
-      font-family: "Hiragino Kaku Gothic ProN";
-      background-repeat: round;
-      background-color: #67A2B7;
-      background-image: url(../img/light_S.png);
-      margin: 0px;
-    }
     header {
       background-image: url(../img/backcolor.png);
       height: 50px;
