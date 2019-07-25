@@ -62,7 +62,7 @@ body {
     margin-right:30px;
   }
   .headerUnderspace {
-    height: 70px;
+    height: 110px;
   }
   .caseX{
     display: flex;
@@ -285,7 +285,7 @@ body {
       display: inline;
       height: 55px;
       position: relative;
-      left: 20px;
+      left: 10px;
     }
     .container {
       background-color: rgb(198, 156, 109, 0.7);
