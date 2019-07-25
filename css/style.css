@@ -3,14 +3,15 @@ body {
   background-repeat: repeat;
   background-color: #67A2B7;
   background-image: url(../img/light.png);
-  animation: bg-slider 50s linear infinite;
+  animation: bg-slider 30s linear infinite;
   margin: 0px;
 }
 /* @keyframes で上記のアニメーションに設定した */
-
 @keyframes bg-slider {
-	from { background-position: 0 0; }
-    to { background-position: -3000px 1000px; }
+	from { background-position: 0 0;
+  }
+    to { background-position: -3500px 1000px;
+     }
 }
   .body2 {
     background-image: url(../img/sitebody_code_wide.png);
@@ -169,6 +170,7 @@ body {
     position: relative;
     bottom: 20px;
   }
+
   .btnMessage {
     color: white;
     text-align: center;
@@ -184,20 +186,28 @@ body {
     text-align: left;
     margin-top: 10px;
   }
+
+
   h1 {
     font-size: 22px;
     margin: 5px;
     margin-bottom: 0px;
     margin-left: 0px;
   }
+
   #eemageT {
     height: 65px;
     display: inline;
   }
+  #eemageT2 {
+    display: none;
+  }
+
   p {
     font-size: 18px;
     margin: 0px;
   }
+
   footer {
     height:50px;
     background-image: url(../img/backcolor.png);
@@ -205,6 +215,7 @@ body {
     color: white;
     text-align: center;
   }
+
   footer p {
     position: relative;
     top: 10px;
@@ -253,7 +264,7 @@ body {
     h1{
       font-size: 17px;
       margin: 5px;
-      margin-bottom: 0px;
+      margin-bottom: 5px;
       margin-left: 0px;
     }
     p {
@@ -269,6 +280,12 @@ body {
     }
     #eemageT {
       display: none;
+    }
+    #eemageT2 {
+      display: inline;
+      height: 55px;
+      position: relative;
+      left: 30px;
     }
     .container {
       background-color: rgb(198, 156, 109, 0.7);
@@ -351,7 +368,6 @@ body {
       box-shadow: 0px 5px rgba(15, 69, 97, 1);
     }
 
-  }
   /* * {
     box-sizing: border-box;
   } */
