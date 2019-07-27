@@ -23,6 +23,9 @@ index.htmlを
 googleChromeなどの
 ブラウザで開いてください。
 
+## Caution[注意事項]
+画像・フォントの二次利用はしないようお願いいたします。
+
 ## Author[製作者]
 ©︎Ishioka
 
@@ -50,6 +53,9 @@ git clone
 index.html
 such as googleChrome
 Please open it in your browser.
+
+## Caution[Notes]
+Please do not make secondary use of images and fonts.
 
 ## Author [Author]
 ©︎Ishioka
