@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Makinas-4-Flat';
+  src: url('./ff/Makinas-4-Flat.otf') format('woff'),
+       url('./ff/Makinas-4-Flat.otf') format('truetype');
+}
 body {
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "Makinas-4-Flat";
   background-repeat: repeat;
   background-color: #67A2B7;
   background-image: url(../img/light.png);
