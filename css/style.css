@@ -67,11 +67,11 @@ body {
   .caseX{
     display: flex;
     justify-content: center;
-    margin: 0px 20px;
+    margin: 0px 30px;
   }
   .frame1{
     padding: 0px;
-    margin: 30px 0px;
+    margin: 30px 20px;
     flex-basis: 50%;
   }
   .frame2 {
