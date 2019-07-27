@@ -16,9 +16,9 @@
   }
   #humberger {
     display: flex;
-    height: 35px;
+    height: 25px;
     position: relative;
-    top:10px;
+    top:15px;
     cursor: pointer;
   }
   #humberger:hover {
@@ -63,9 +63,9 @@
   }
   #eemageT2 {
     display: inline;
-    height: 55px;
+    height: 38px;
     position: relative;
-    left: 10px;
+    bottom: 3px;
   }
   .container {
     background-color: rgb(198, 156, 109, 0.7);
