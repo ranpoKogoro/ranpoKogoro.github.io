@@ -1,10 +1,7 @@
-@font-face {
-  font-family: 'Makinas-4-Flat';
-  src: url('./ff/Makinas-4-Flat.otf') format('woff'),
-       url('./ff/Makinas-4-Flat.otf') format('truetype');
-}
+
 body {
-  font-family: "Makinas-4-Flat";
+  font-family: 'Makinas-4-Flat';
+  src: url(../ff/Makinas-4-Flat.otf);
   background-repeat: repeat;
   background-color: #67A2B7;
   background-image: url(../img/light.png);
