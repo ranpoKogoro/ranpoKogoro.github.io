@@ -195,6 +195,7 @@ body {
     margin: 5px;
     margin-bottom: 0px;
     margin-left: 0px;
+    color: #FFA500;
   }
 
   #eemageT {
@@ -208,6 +209,7 @@ body {
   p {
     font-size: 18px;
     margin: 0px;
+
   }
 
   footer {
