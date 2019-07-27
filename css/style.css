@@ -1,4 +1,7 @@
-
+@font-face {
+	font-family: 'Makinas-4-Flat';
+	src: url(../ff/Makinas-4-Flat.otf);
+}
 body {
   font-family: 'Makinas-4-Flat';
   src: url(../ff/Makinas-4-Flat.otf);
