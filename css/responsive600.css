@@ -55,6 +55,7 @@
     margin: 5px;
     margin-bottom: 5px;
     margin-left: 0px;
+
   }
   p {
     font-size: 12px;
@@ -68,6 +69,11 @@
     width: 200px;
   }
   .readme {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+  }
+  .readmeClose {
     font-size: 20px;
     position: relative;
     top: 5px;

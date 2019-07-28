@@ -219,6 +219,17 @@ body {
 	.readme:hover {
 		opacity: 0.5;
 	}
+	.readmeClose {
+		color: #FFA500;
+		font-size: 20px;
+		position: relative;
+		top: 10px;
+		cursor: pointer;
+		display: none;
+	}
+	.readmeClose:hover {
+		opacity: 0.5;
+	}
   .Sentence {
     color: white;
     text-align: left;

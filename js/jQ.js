@@ -40,6 +40,13 @@ window.onload = () => {
 // });
 // 上記を踏まえて下記クリックイベントの処理の書き方
 $('.readme').click(function() {
+  $('.readme').hide();
+  $('.readmeClose').show();
   $('.Sentence').fadeIn('slow');
+});
+$('.readmeClose').click(function() {
+  $('.readmeClose').hide();
+  $('.Sentence').hide();
+  $('.readme').show();
 });
 });
