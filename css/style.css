@@ -5,13 +5,16 @@
 body {
   font-family: 'Makinas-4-Flat';
   src: url(../ff/Makinas-4-Flat.otf);
-  background-repeat: repeat;
   background-color: #67A2B7;
-  background-image: url(../img/light.png);
-  animation: bg-slider 30s linear infinite;
   margin: 0px;
 }
-/* @keyframes で上記のアニメーションに設定した */
+.body1 {
+	background-repeat: repeat;
+	background-image: url(../img/light.png);
+	animation: bg-slider 30s linear infinite;
+	margin: 0px;
+}
+/* @keyframes 変数名で上記のアニメーションを設定 */
 @keyframes bg-slider {
 	from { background-position: 0 0;
   }
@@ -72,6 +75,9 @@ body {
   .headerUnderspace {
     height: 110px;
   }
+	#people {
+		text-align: center;
+	}
   .caseX{
     display: flex;
     justify-content: center;
