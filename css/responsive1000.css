@@ -28,6 +28,11 @@
   .headerUnderspace {
     height: 70px;
   }
+  #peopleP {
+    width: 80%;
+    position: relative;
+    top:20px;
+  }
   .caseX{
     display: inline;
     margin: 0px 20px;
