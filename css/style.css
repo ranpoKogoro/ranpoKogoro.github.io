@@ -80,7 +80,9 @@ body {
     color: white;
     font-size: 25px;
     background-color: rgba(70,130,180,0.7);
+		padding: 10px;
     display: none;
+		cursor: pointer;
 	}
   /* @keyframes time-slider {
   	from { background-position: 0 0;

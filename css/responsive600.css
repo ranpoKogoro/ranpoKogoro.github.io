@@ -30,11 +30,12 @@
   #people {
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 13px;
     background-color: rgba(70,130,180,0.7);
     position: relative;
     top: 15px;
     display: none;
+    padding: 5px;
   }
   .button {
     display: none;
