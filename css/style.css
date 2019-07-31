@@ -11,21 +11,28 @@ body {
 .body1 {
 	background-repeat: repeat;
 	background-image: url(../img/light.png);
-	animation: bg-slider 30s linear infinite;
+	animation: bg-slider1 30s linear infinite;
 	margin: 0px;
 }
 /* @keyframes 変数名で上記のアニメーションを設定 */
-@keyframes bg-slider {
+@keyframes bg-slider1 {
 	from { background-position: 0 0;
   }
     to { background-position: -3500px 1000px;
      }
 }
   .body2 {
+		background-repeat: repeat;
     background-image: url(../img/sitebody_code_wide.png);
-    background-repeat: repeat;
+		animation: bg-slider2 50s linear infinite;
     margin: 0px;
   }
+	@keyframes bg-slider2 {
+		from { background-position: 0 0;
+		}
+		to { background-position: 1000px 0px;
+		}
+	}
   .button {
     height: 70px;
     cursor: pointer;
