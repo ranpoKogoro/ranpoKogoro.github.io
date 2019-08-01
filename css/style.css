@@ -8,6 +8,9 @@ body {
   background-color: #67A2B7;
   margin: 0px;
 }
+body:hover{
+	cursor: url(../img/contr2.png), auto;
+}
 .body1 {
 	background-repeat: repeat;
 	background-image: url(../img/light.png);
@@ -35,7 +38,7 @@ body {
 	}
   .button {
     height: 70px;
-    cursor: pointer;
+    cursor: url(../img/contr2.png), auto;
     padding: 0;
     margin: 0;
   }
@@ -89,7 +92,7 @@ body {
     background-color: rgba(70,130,180,0.7);
 		padding: 10px;
     display: none;
-		cursor: pointer;
+		cursor: url(../img/contr2.png), auto;
 	}
   /* @keyframes time-slider {
   	from { background-position: 0 0;
@@ -194,7 +197,7 @@ body {
     padding: 10px;
     border-radius: 40px;
     display: inline-block;
-    cursor: pointer;
+    cursor: url(../img/contr2.png), auto;
     box-shadow: 0px 5px rgba(15, 69, 97, 1);
   }
   .startBtn:hover {
@@ -223,7 +226,7 @@ body {
 		font-size: 20px;
 		position: relative;
 		top: 10px;
-		cursor: pointer;
+		cursor: url(../img/contr2.png), auto;
 	}
 	.readme:hover {
 		opacity: 0.5;
@@ -233,7 +236,7 @@ body {
 		font-size: 20px;
 		position: relative;
 		top: 10px;
-		cursor: pointer;
+		cursor: url(../img/contr2.png), auto;
 		display: none;
 	}
 	.readmeClose:hover {
