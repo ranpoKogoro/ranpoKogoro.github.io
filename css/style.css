@@ -8,9 +8,6 @@ body {
   background-color: #67A2B7;
   margin: 0px;
 }
-body:hover{
-	cursor: url(../img/contr2.png), auto;
-}
 .body1 {
 	background-repeat: repeat;
 	background-image: url(../img/light.png);
@@ -38,7 +35,7 @@ body:hover{
 	}
   .button {
     height: 70px;
-    cursor: url(../img/contr2.png), auto;
+    cursor: pointer;
     padding: 0;
     margin: 0;
   }
@@ -92,7 +89,7 @@ body:hover{
     background-color: rgba(70,130,180,0.7);
 		padding: 10px;
     display: none;
-		cursor: url(../img/contr2.png), auto;
+		cursor: pointer;
 	}
   /* @keyframes time-slider {
   	from { background-position: 0 0;
@@ -100,6 +97,80 @@ body:hover{
       to { background-position: -3500px 50px;
        }
   } */
+	/* ここから改修 */
+	.login-modal-wrapper {
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  background-color: rgba(0, 0, 0, 0.6);
+	  z-index: 100;
+	  /* display: none;を追加してください */
+	  display: none;
+	}
+
+	.modal {
+	  position: absolute;
+	  top: 20%;
+	  left: 34%;
+	  background-color: #e6ecf0;
+	  padding: 20px 0 40px;
+	  border-radius: 10px;
+	  width: 450px;
+	  height: auto;
+	  text-align: center;
+	}
+
+	.fa-times {
+	  position: absolute;
+	  top: 12px;
+	  right: 12px;
+	  color: rgba(128, 128, 128, 0.46);
+	  cursor: pointer;
+	}
+
+	#signup-form, #login-form {
+	  width: 100%;
+	}
+
+	#signup-form h2, #login-form h2 {
+	  color: #5f5d60;
+	  letter-spacing: 1px;
+	  margin-bottom: 40px;
+	}
+
+	#signup-form input, #login-form input {
+	  width: 320px;
+	  margin-bottom: 20px;
+	  font-size: 12px;
+	  padding: 12px 12px;
+	  border: 1px solid #d0d5d8;
+	  border-radius: 5px;
+	}
+
+	#submit-btn {
+	  display: inline-block;
+	  padding: 14px 140px;
+	  background-color: #5dca88;
+	  border: none;
+	  border-radius: 3px;
+	  color: white;
+	  margin: 10px auto;
+	  cursor: pointer;
+	}
+	#return-btn {
+	  display: inline-block;
+	  padding: 14px 140px;
+	  background-color: #5dca88;
+	  border: none;
+	  border-radius: 3px;
+	  color: white;
+	  margin: 10px auto;
+	  cursor: pointer;
+	}
+	/* ここまで改修 */
+
   .caseX{
     display: flex;
     justify-content: center;
@@ -197,7 +268,7 @@ body:hover{
     padding: 10px;
     border-radius: 40px;
     display: inline-block;
-    cursor: url(../img/contr2.png), auto;
+    cursor: pointer;
     box-shadow: 0px 5px rgba(15, 69, 97, 1);
   }
   .startBtn:hover {
@@ -226,7 +297,7 @@ body:hover{
 		font-size: 20px;
 		position: relative;
 		top: 10px;
-		cursor: url(../img/contr2.png), auto;
+		cursor: pointer;
 	}
 	.readme:hover {
 		opacity: 0.5;
@@ -236,7 +307,7 @@ body:hover{
 		font-size: 20px;
 		position: relative;
 		top: 10px;
-		cursor: url(../img/contr2.png), auto;
+		cursor: pointer;
 		display: none;
 	}
 	.readmeClose:hover {

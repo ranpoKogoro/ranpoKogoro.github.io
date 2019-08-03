@@ -28,6 +28,18 @@ $(function() {
        $('#people').fadeIn(1500);
      }
   }
+  // ここから改修
+  $('#siteInfo').click(function(){
+ $('#login-modal').fadeIn();
+});
+  $('#loginDummy').click(function(){
+ $('#login-modal').fadeIn();
+});
+// ここまで改修
+$('#return-btn').click(function(){
+  $('#login-modal').fadeOut();
+});
+
 $('.gameP').fadeIn(1500);
 $('.gameP2').fadeIn(1500);
 $('.gameP3').fadeIn(1500);
