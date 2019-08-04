@@ -95,6 +95,7 @@ $h1.click( function() {
   $('h1').hover( function() {
     $(this).css('color','rgba(255, 247, 153,0.8)');
   },
+  // 2行目はマウスを離した時のイベントを設定
     function() {
       $(this).css('color','rgba(153, 238, 255,0.8)').fadeIn(500);
     });
