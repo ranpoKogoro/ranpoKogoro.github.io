@@ -30,7 +30,7 @@ $(function() {
   }
   // ここから改修
   $('#siteInfo').click(function(){
- $('#login-modal').fadeIn();
+ $('#siteInfo-modal').fadeIn();
 });
   $('#loginDummy').click(function(){
  $('#login-modal').fadeIn();
@@ -47,9 +47,11 @@ $(function() {
  $('#login-modal').fadeIn();
 });
 // ここまで改修
-$('#return-btn').click(function(){
+$('.return-btn').click(function(){
+  $('#siteInfo-modal').fadeOut();
   $('#login-modal').fadeOut();
 });
+
 
 $('.gameP').fadeIn(1500);
 $('.gameP2').fadeIn(1500);

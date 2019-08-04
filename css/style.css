@@ -147,7 +147,19 @@ body {
 	  height: auto;
 	  text-align: center;
 	}
+	#siteInfo-modal {
 
+	}
+	#siteInfo-modal h2 {
+		color: rgba(255, 241, 82);
+		letter-spacing: 1px;
+		margin-bottom: 19px;
+	}
+	#siteInfo-modal p {
+		color: rgba(255, 255, 255);
+	  letter-spacing: 1px;
+	  margin-bottom: 30px;
+	}
 	#login-form {
 	  width: 100%;
 	}
@@ -172,7 +184,7 @@ body {
 	  border-radius: 5px;
 	}
 
-	#return-btn {
+	.return-btn {
 		text-align: right;
 		position: relative;
 		right: 20px;
@@ -180,7 +192,7 @@ body {
 	  cursor: pointer;
 		font-size: 30px;
 	}
-	#return-btn:hover {
+	.return-btn:hover {
 	  color: rgba(255, 241, 82);
 	}
 	/* ここまで改修 */
