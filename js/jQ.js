@@ -36,6 +36,17 @@ $(function() {
  $('#login-modal').fadeIn();
 });
 // ここまで改修
+  // ここから改修
+  $('#humberger').click(function(){
+ $('.smartMenu').fadeIn();
+});
+  $('#smartSiteInfo').click(function(){
+ $('#login-modal').fadeIn();
+});
+  $('#smartLoginDummy').click(function(){
+ $('#login-modal').fadeIn();
+});
+// ここまで改修
 $('#return-btn').click(function(){
   $('#login-modal').fadeOut();
 });
