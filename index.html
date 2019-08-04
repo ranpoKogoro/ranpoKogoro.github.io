@@ -16,6 +16,8 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="android-touch-icon.png" sizes="192x192">
+    <!-- オーサムフォント読み込み -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- スタイルシート読み込み -->
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,intial-scale=1.0">
@@ -52,12 +54,14 @@
       <div id="login-modal" class="login-modal-wrapper">
         <div class="modal">
           <div id="login-form">
+            <div id="return-btn">
+              <i class="fas fa-times-circle"></i>
+            </div>    
             <h2>ログインは不要だよ!!</h2>
             <p>幅広いユーザーの皆様にご利用いただくため<br>ログイン不要でご利用いただけますよ!</p>
             <form action="#">
               <input class="form-control" type="text" placeholder="ここに文字を入れても">
               <input class="form-control" type="password" placeholder="特に意味はない">
-              <div id="return-btn">閉じる</div>
             </form>
           </div>
         </div>

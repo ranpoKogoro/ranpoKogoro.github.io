@@ -133,7 +133,6 @@ body {
 	  left: 0;
 	  background-color: rgba(255, 255, 255, 0.6);
 	  z-index: 100;
-	  /* display: none;を追加してください */
 	  display: none;
 	}
 
@@ -174,18 +173,15 @@ body {
 	}
 
 	#return-btn {
-	  display: inline-block;
-	  padding: 14px 115px;
-	  background-color: #67A2B7;
-	  border: none;
-	  border-radius: 5px;
+		text-align: right;
+		position: relative;
+		right: 20px;
 	  color: white;
-	  margin: 20px 0px;
 	  cursor: pointer;
+		font-size: 30px;
 	}
 	#return-btn:hover {
 	  color: rgba(255, 241, 82);
-		background-color: #ff8c52;
 	}
 	/* ここまで改修 */
 
